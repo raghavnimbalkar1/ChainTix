@@ -1,0 +1,46 @@
+/* src/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b0b0b;
+    padding: 0px 20px;
+    color: #fff;
+    border-bottom: 1px solid #333; /* Line separating navbar and body */
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-image {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar-links li {
+    margin: 0 15px;
+    cursor: pointer;
+  }
+  
+  .connect-wallet {
+    padding: 8px 15px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+h1 {
+    font-size: 18px; /* Reduce font size */
+    font-weight: bold;
+    color: white;
+}
