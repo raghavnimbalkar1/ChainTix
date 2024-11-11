@@ -1,17 +1,17 @@
-// src/pages/Home.js
 import React from 'react';
-import Header from '../components/Header';
-import SearchBar from '../components/SearchBar';
-import FeaturedEvents from '../components/FeaturedEvents';
+import Navbar from '../components/Navbar';
+import HeroSection from '../components/HeroSection';
+import FeaturedEvents from './components/FeaturedEvents';
+import '../App.css';
 
-const Home = () => (
-  <div>
-    <Header />
-    <div className="main-content">
-      <SearchBar />
+function Home() {
+  return (
+    <div className="home">
+      <Navbar />
+      <HeroSection />
       <FeaturedEvents />
     </div>
-  </div>
-);
+  );
+}
 
 export default Home;

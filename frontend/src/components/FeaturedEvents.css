@@ -1,0 +1,58 @@
+
+.featured-events {
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .featured-events h2 {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .events-list {
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.scroll-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 30%;
+}
+
+.scroll-button.left {
+    left: -30px;
+}
+
+.scroll-button.right {
+    right: -30px;
+}
+
+.event-card {
+  min-width: 200px;
+  background-color: #0b0b0b;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s;
+  flex-shrink: 0; 
+}
