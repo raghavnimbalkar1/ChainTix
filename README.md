@@ -1,4 +1,4 @@
-# Tokenmaster
+# ChainTix
 
 ## Technology Stack & Tools
 
