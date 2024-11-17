@@ -12,6 +12,8 @@
 .navbar-logo {
   display: flex;
   align-items: center;
+  justify-content: center; /* Ensure the logo is centered */
+  flex-shrink: 0; /* Prevent the logo from shrinking */
 }
 
 .logo-image {
@@ -19,9 +21,16 @@
   margin-right: 8px;
 }
 
-.logo-text {
-  font-size: 16px;
-  font-weight: bold;
+.logo-link {
+  color: white; /* Ensure the text is white */
+  text-decoration: none; /* Remove underline */
+  font-size: 18px; /* Adjust font size */
+  display: flex;
+  align-items: center; /* Align the logo and text vertically */
+}
+
+.logo-link:hover {
+  color: white; /* Remove hover effect, keep text white */
 }
 
 .navbar-links {
@@ -31,19 +40,21 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  transition: color 0.3s ease;
 }
 
-.navbar-link {
+.navbar-links li {
+  padding: 0;
+}
+
+/* Style for the Link component from react-router-dom */
+.navbar-links .nav-link {
   color: white;
   text-decoration: none;
   font-size: 16px;
 }
 
-.navbar-link:hover {
-  text-decoration: underline;
-}
 
-  
 .connect-wallet {
   padding: 8px 15px;
   background-color: #ffffff;
@@ -51,10 +62,57 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
-  
-h1 {
-    font-size: 18px; /* Reduce font size */
-    font-weight: bold;
-    color: white;
+
+/* Animation state */
+.connecting {
+  background-color: #f39c12;
+  color: white;
+  cursor: not-allowed;
+}
+
+.connect-wallet:hover {
+  background-color: #ddd;
+}
+
+.wallet-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wallet-address {
+  color: #2ecc71;
+  font-size: 0.9rem;
+  background-color: #1c2833;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #27ae60;
+}
+
+.disconnect-wallet {
+  background-color: #e74c3c;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.disconnect-wallet:hover {
+  background-color: #c0392b;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+.navbar-links .nav-link:hover {
+  text-decoration: none; /* Remove underline on hover */
+  color: #ddd; /* Slight grey background on hover */
 }
